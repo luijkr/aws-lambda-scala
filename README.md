@@ -26,5 +26,8 @@ Alternatively, use
 Check out the function by calling the following, e.g. using `curl`:
 
 ```
-curl http://127.0.0.1:3000/hello/
+curl -X POST localhost:3000 \
+    --header 'Content-Type: application/json' \
+    --data '{"example-field": "example-value"}'
 ```
+
